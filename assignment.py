@@ -23,7 +23,9 @@ def remove_vowels(text):
 
 # Exercise 3
 def get_initials(text):
-    # Write your code here
+    split hiiged 
+    str = "hello oliver"
+print(str.upper()[0]+".")
     pass
 
 # Exercise 4
