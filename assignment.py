@@ -27,7 +27,6 @@ def get_initials(text):
     print(split[0].upper()[0] + "." + split[1].upper()[0] + ".")
 # Exercise 4
 def extract_year(text):
-def extract_year(text):
     split = text.split()
     for word in split:
         year = ""
@@ -37,7 +36,6 @@ def extract_year(text):
         if len(year) == 4:
             print(year)
             return
-    print(False)
 
 # Exercise 5
 def is_palindrome(text):
