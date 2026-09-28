@@ -23,11 +23,8 @@ def remove_vowels(text):
 
 # Exercise 3
 def get_initials(text):
-    split hiiged 
-    str = "hello oliver"
-print(str.upper()[0]+".")
-    pass
-
+    split = text.split()
+    print(split[0].upper()[0] + "." + split[1].upper()[0] + ".")
 # Exercise 4
 def extract_year(text):
     # Write your code here
