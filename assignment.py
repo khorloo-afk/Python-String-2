@@ -14,8 +14,12 @@ def is_valid_email(text):
     return "Invalid"
 # Exercise 2
 def remove_vowels(text):
-    # Write your code here
-    pass
+    vowels="aeiouAEIOU"
+    s=""
+    for i in range(len(text)):
+        if text[i] not in vowels:
+            s=s+text[i]
+    return s
 
 # Exercise 3
 def get_initials(text):
