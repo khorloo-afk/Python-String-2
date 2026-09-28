@@ -27,11 +27,28 @@ def get_initials(text):
     print(split[0].upper()[0] + "." + split[1].upper()[0] + ".")
 # Exercise 4
 def extract_year(text):
-    # Write your code here
-    pass
+def extract_year(text):
+    split = text.split()
+    for word in split:
+        year = ""
+        for char in word:
+            if char.isdigit():
+                year += char
+        if len(year) == 4:
+            print(year)
+            return
+    print(False)
 
 # Exercise 5
 def is_palindrome(text):
-    # Write your code here
-    pass
+    new_text = ""
+    for char in text:
+        if char.isalnum():
+            new_text += char.lower()
+    if new_text == new_text[::-1]:
+        print(True)
+    else:
+        print(False)
+is_palindrome("Never odd or even")
+is_palindrome("Hello World")
 
