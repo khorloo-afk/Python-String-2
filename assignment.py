@@ -39,14 +39,8 @@ def extract_year(text):
 
 # Exercise 5
 def is_palindrome(text):
-    new_text = ""
-    for char in text:
-        if char.isalnum():
-            new_text += char.lower()
-    if new_text == new_text[::-1]:
-        print(True)
-    else:
-        print(False)
-is_palindrome("Never odd or even")
-is_palindrome("Hello World")
-
+    t = ""
+    for c in text:
+        if c!=" ":
+            t+=c
+    return t.lower()[::-1]==t.lower()
